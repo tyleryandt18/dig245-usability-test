@@ -11,25 +11,50 @@ h1{
     padding: 30px;
 }
 
+hr {
+    border-top: 2px solid #1ED760;
+}
+
 /* change font sizes depending on the breakpoint */
 
 /* Small */
 @media (min-width: 576px) {
-    h1{
+    h1 {
         font-size: 40px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    hr {
+        margin-top: 50px;
+        margin-bottom: 25px;
     }
 }
 
 /* Medium */
 @media (min-width: 768px) {
-    h1{
+    h1 {
         font-size: 60px;
+    }
+    h4 {
+        font-size: 30px;
+    }
+    hr {
+        margin-top: 100px;
+        margin-bottom: 50px;
     }
 }
 
 /* Large and Beyond */
 @media (min-width: 992px) {
-    h1{
+    h1 {
         font-size: 90px;
+    }
+    h4 {
+        font-size: 45px;
+    }
+    hr {
+        margin-top: 125px;
+        margin-bottom: 50px;
     }
 }
