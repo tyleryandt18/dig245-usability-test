@@ -1,2 +1,35 @@
-
 /* css */
+body {
+    font-family: 'Istok Web', sans-serif;
+    font-weight: bold;
+    background-color: #191414;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    padding: 30px;
+}
+
+/* change font sizes depending on the breakpoint */
+
+/* Small */
+@media (min-width: 576px) {
+    h1{
+        font-size: 40px;
+    }
+}
+
+/* Medium */
+@media (min-width: 768px) {
+    h1{
+        font-size: 60px;
+    }
+}
+
+/* Large and Beyond */
+@media (min-width: 992px) {
+    h1{
+        font-size: 90px;
+    }
+}
