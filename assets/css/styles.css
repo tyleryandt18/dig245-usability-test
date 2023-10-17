@@ -1,4 +1,7 @@
 /* css */
+
+/* Link to Figma design */
+
 body {
     font-family: 'Istok Web', sans-serif;
     font-weight: bold;
@@ -25,6 +28,14 @@ img {
     padding-bottom: 25px;
 }
 
+a {
+    color: white;
+}
+
+a:hover {
+    color: #1ED760;
+}
+
 hr { 
     /* The color here is not the same as the hover cover, despite it being the same 
     hex value. I do not know why this is - in the hr, the green appears darker */
@@ -41,8 +52,11 @@ hr {
     margin-bottom: 25px;
 }
 
-.task-bar:hover {
-    color: #1ED760;
+.task-bar {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: #191414;
 }
 
 /* change font sizes depending on the breakpoint */
@@ -55,8 +69,11 @@ hr {
     h4 {
         font-size: 30px;
     }
+    h5 {
+        font-size: 25px;
+    }
     hr {
-        margin: 50px 0 50px;
+        margin: 60px 0 60px;
     }
     h6 {
         font-size: 18px;
@@ -73,6 +90,9 @@ hr {
     }
     h4 {
         font-size: 45px;
+    }
+    h5 {
+        font-size: 35px;
     }
     h6 {
         font-size: 20px;

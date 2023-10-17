@@ -27,27 +27,27 @@
                 <hr>
             </div>
         </div>
-        <div class="row" style="text-align: center; padding-bottom: 25px">
+        <div class="row task-bar">
             <div class="col-4 col-md-2 task-bar">
-                <h4><a>Task 1</a></h4>
+                <h5><a href="#Task1">Task 1</a></h5>
             </div>
             <div class="col-4 col-md-2 task-bar">
-                <h4><a>Task 2</a></h4>
+                <h5><a href="#Task2">Task 2</a></h5>
             </div>
             <div class="col-4 col-md-2 task-bar">
-                <h4><a>Task 3</a></h4>
+                <h5><a href="#Task3">Task 3</a></h5>
             </div>
             <div class="col-4 col-md-2 task-bar">
-                <h4><a>Task 4</a></h4>
+                <h5><a href="#Task4">Task 4</a></h5>
             </div>
             <div class="col-4 col-md-2 task-bar">
-                <h4><a>Task 5</a></h4>
+                <h5><a href="#Task5">Task 5</a></h5>
             </div>
             <div class="col-4 col-md-2 task-bar">
-                <h4><a>SUS</a></h4>
+                <h5><a href="#SUS">SUS</a></h5>
             </div>
         </div>
-        <div class="row">
+        <div class="row" style="padding-top: 25px"> <!-- Added padding here to add white space -->
             <div class="col-12 col-md-6 order-2 order-md-1">
                 <h6>For this experiment, the group devised five tasks for the subject to complete. The primary goal is to assess the usability of Spotify's webpage; with this in mind, the tasks were created to reasonably evaluate different sections of the page. For each task, the subject will be assessed on accuracy, recall, time, and emotional response.</h6>
                 <h6>Read more below to discover how each task went. Click on the task bar to jump to a specific section.</h6>
@@ -56,10 +56,10 @@
                 <img src="assets/img/Home.png" width="100%" height="auto" alt="Home Page"/>
             </div>
             <div class="col-2 offset-5 order-3">
-                <hr>
+                <hr id="Task1">
             </div>
         </div>
-        <div class="row" id="Task1">
+        <div class="row">
             <div class="col-12 task-title">
                 <h4>Task 1 - Make an Account</h4>
             </div>
@@ -73,10 +73,10 @@
                 <img src="assets/img/sign-up.png" width="100%" height="auto" alt="Sign Up">
             </div>
             <div class="col-2 offset-5 order-3">
-                <hr>
+                <hr id="Task2">
             </div>
         </div>
-        <div class="row" id="Task2">
+        <div class="row">
             <div class="col-12 task-title">
                 <h4>Task 2 - Download the Desktop App</h4>
             </div>
@@ -90,10 +90,10 @@
                 <img src="assets/img/Download.png" width="100%" height="auto" alt="Download Desktop App">
             </div>
             <div class="col-2 offset-5 order-3">
-                <hr>
+                <hr id="Task3">
             </div>
         </div>
-        <div class="row" id="Task3">
+        <div class="row">
             <div class="col-12 task-title">
                 <h4>Task 3 - Find Pricing Options in Terms and Conditions</h4>
             </div>
@@ -107,7 +107,7 @@
                 <img src="assets/img/Pricing.png" width="100%" height="auto" alt="Pricing in Terms and Conditions">
             </div>
             <div class="col-2 offset-5 order-3">
-                <hr>
+                <hr id="Task4">
             </div>
         </div>
         <div class="row" id="Task4">
@@ -124,10 +124,10 @@
                 <img src="assets/img/Instagram.png" width="100%" height="auto" alt="Instagram">
             </div>
             <div class="col-2 offset-5 order-3">
-                <hr>
+                <hr id="Task5">
             </div>
         </div>
-        <div class="row" id="Task5">
+        <div class="row">
             <div class="col-12 task-title">
                 <h4>Task 5 - Find How to Use the Spotify API to Pull an Album</h4>
             </div>
@@ -141,8 +141,115 @@
                 <img src="assets/img/Album API.png" width="100%" height="auto" alt="Album API">
             </div>
             <div class="col-2 offset-5 order-3">
-                <hr>
+                <hr id="SUS">
             </div>
+        </div>
+        <div class="row">
+            <div class="col-12 task-title">
+                <h4>Find Your SUS Score</h4>
+            </div>
+            <div class="col-8 offset-2">
+                <h6>The System Usability Scale (SUS) is a tool that compiles data to measure a system's usability. Click <a href="https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html" target="_blank">here</a> to read more. Fill out the questionare below to find your score for Spotify's webpage.</h6>
+                <h6>On a scale of 1-5 where 1 is strongly disagree and 5 is strongly agree.</h6> 
+                <!-- Source: https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html -->
+            </div>
+        </div>
+        <div class="row">
+            <form action="#" id="formSUS">
+                <div class="row">
+                    <div class="col-10 col-md-8 offset-md-1">
+                        <h6>1. I think that I would like to use this system frequently.</h6>
+                    </div>
+                    <div class="col-2 col-md-3">
+                        <input type="number" id="q1" name="q1" min="0" max="5" value="4" required/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 col-md-8 offset-md-1">
+                        <h6>2. I found the system unnecessarily complex.</h6>
+                    </div>
+                    <div class="col-2 col-md-3">
+                        <input type="number" id="q2" name="q2" min="0" max="5" value="1" required/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 col-md-8 offset-md-1">
+                        <h6>3. I thought the system was easy to use.</h6>
+                    </div>
+                    <div class="col-2 col-md-3">
+                        <input type="number" id="q3" name="q3" min="0" max="5" value="5" required/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 col-md-8 offset-md-1">
+                        <h6>4. I think that I would need the support of a technical person to be able to use this system.</h6>
+                    </div>
+                    <div class="col-2 col-md-3">
+                        <input type="number" id="q4" name="q4" min="0" max="5" value="1" required/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 col-md-8 offset-md-1">
+                        <h6>5. I found the various functions in this system were well integrated.</h6>
+                    </div>
+                    <div class="col-2 col-md-3">
+                        <input type="number" id="q5" name="q5" min="0" max="5" value="4" required/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 col-md-8 offset-md-1">
+                        <h6>6. I thought there was too much inconsistency in this system.</h6>
+                    </div>
+                    <div class="col-2 col-md-3">
+                        <input type="number" id="q6" name="q6" min="0" max="5" value="1" required/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 col-md-8 offset-md-1">
+                        <h6>7. I would imagine that most people would learn to use this system very quickly.</h6>
+                    </div>
+                    <div class="col-2 col-md-3">
+                        <input type="number" id="q7" name="q7" min="0" max="5" value="4" required/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 col-md-8 offset-md-1">
+                        <h6>8. I found this system very cumbersome to use.</h6>
+                    </div>
+                    <div class="col-2 col-md-3">
+                        <input type="number" id="q8" name="q8" min="0" max="5" value="1" required/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 col-md-8 offset-md-1">
+                        <h6>9. I felt very confident using this system.</h6>
+                    </div>
+                    <div class="col-2 col-md-3">
+                        <input type="number" id="q9" name="q9" min="0" max="5" value="4" required/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 col-md-8 offset-md-1">
+                        <h6>10. I needed to learn a lot of things before I could get going with this system.</h6>
+                    </div>
+                    <div class="col-2 col-md-3">
+                        <input type="number" id="q10" name="q10" min="0" max="5" value="2" required/>
+                    </div>
+                </div>
+                <div class="row" style="text-align: center; padding-bottom: 25px;">
+                    <div class="col-12" style="text-align: center; padding-bottom: 25px">
+                        <button type="submit">Calculate Score</button>
+                        <br><br>
+                    </div>
+                    <div class="col-9">
+                        <h2>Your Score:</h2>
+                    </div>
+                    <div class="col-3">
+                        <input type="number" step="any" class="form-control" id="answer">
+                    </div>
+                </div>
+            </div>
+            </form>
         </div>
     </div>
 
