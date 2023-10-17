@@ -9,27 +9,43 @@ body {
 h1{
     text-align: center;
     padding: 30px;
+    font-size: 40px;
 }
 
-hr {
+h4 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 14px;
+    padding-bottom: 25px;
+}
+
+img {
+    padding-bottom: 25px;
+}
+
+hr { 
+    /* The color here is not the same as the hover cover, despite it being the same 
+    hex value. I do not know why this is - in the hr, the green appears darker */
     border-top: 2px solid #1ED760;
+    margin: 25px 0 25px;
+}
+
+.title {
+    margin-bottom: 50px;
+}
+
+.task-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.task-bar:hover {
+    color: #1ED760;
 }
 
 /* change font sizes depending on the breakpoint */
-
-/* Small */
-@media (min-width: 576px) {
-    h1 {
-        font-size: 40px;
-    }
-    h4 {
-        font-size: 20px;
-    }
-    hr {
-        margin-top: 50px;
-        margin-bottom: 25px;
-    }
-}
 
 /* Medium */
 @media (min-width: 768px) {
@@ -40,7 +56,12 @@ hr {
         font-size: 30px;
     }
     hr {
-        margin-top: 100px;
+        margin: 50px 0 50px;
+    }
+    h6 {
+        font-size: 18px;
+    }
+    .task-title {
         margin-bottom: 50px;
     }
 }
@@ -53,8 +74,10 @@ hr {
     h4 {
         font-size: 45px;
     }
-    hr {
-        margin-top: 125px;
-        margin-bottom: 50px;
+    h6 {
+        font-size: 20px;
+    }
+    .title {
+        margin-bottom: 100px;
     }
 }
