@@ -39,13 +39,6 @@ a:hover {
     color: #1ED760;
 }
 
-hr { 
-    /* The color here is not the same as the hover cover, despite it being the same 
-    hex value. I do not know why this is - in the hr, the green appears darker */
-    border-top: 2px solid #1ED760;
-    margin: 25px 0 25px;
-}
-
 button {
     border-color: #1ED760;
     background-color: #1ED760;
@@ -70,6 +63,12 @@ button {
     background-color: #191414;
 }
 
+.line-break {
+    border-top: 2px solid #1ED760;
+    color: #191414; /* To hide the  text on the page */
+    margin: 25px 0 25px;
+}
+
 /* change font sizes depending on the breakpoint */
 
 /* Medium */
@@ -83,14 +82,14 @@ button {
     h5 {
         font-size: 25px;
     }
-    hr {
-        margin: 60px 0 60px;
-    }
     h6 {
         font-size: 18px;
     }
     .task-title {
         margin-bottom: 50px;
+    }
+    .line-break {
+        margin: 50px 0 50px;
     }
 }
 
