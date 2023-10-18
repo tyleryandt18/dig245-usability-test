@@ -47,6 +47,12 @@ button {
     border-radius: 10px;
 }
 
+button:hover {
+    border-color: #1ED760;
+    background-color: white;
+    color: #1ED760;
+}
+
 .title {
     margin-bottom: 50px;
 }
